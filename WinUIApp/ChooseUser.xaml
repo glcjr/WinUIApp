@@ -1,0 +1,43 @@
+﻿<Page
+    x:Class="WinUIApp.ChooseUser"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WinUIApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="txtMessage" Text="Pick your Terminal to Log In" Grid.Row="0" Grid.ColumnSpan="7" FontSize="30" />
+        <ListView x:Name="lstUsers" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="2" Grid.RowSpan="7" Tapped="lstUsers_Tapped" FontSize="25" />
+        <TextBlock Text="User" Grid.Row="3" Grid.Column="5"  Grid.ColumnSpan="2" FontSize="25" />
+        <TextBlock x:Name="lblUser" Text="" Grid.Row="4" Grid.Column="5"  Grid.ColumnSpan="2" FontSize="25" />
+        <TextBlock Text="Password" Grid.Row="5" Grid.Column="5"  Grid.ColumnSpan="2" FontSize="25" />
+        <TextBox x:Name="txtPassword" Grid.Row="6" Grid.Column="5"  Grid.ColumnSpan="2" FontSize="25"/>
+        <Button x:Name="btnLogin" Grid.Row="7" Grid.Column="5"  Grid.ColumnSpan="2" Content="Login" Tapped="btnLogin_Tapped" FontSize="25" />
+    </Grid>
+</Page>

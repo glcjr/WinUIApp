@@ -1,0 +1,87 @@
+﻿<Page
+    x:Class="WinUIApp.Terminals"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WinUIApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="txtMessage" Text="Pick your Terminal to Log In" Grid.Row="0" Grid.ColumnSpan="7" FontSize="30" />
+        <Image Grid.Row="3" Grid.ColumnSpan="5" Source="/Assets/wd318111.jpg" Stretch="Fill" />
+        <Image Grid.Row="2" Grid.Column="7" Source="/Assets/wd318111.jpg" Stretch="Fill" />
+        <Image Grid.Row="4" Grid.Column="7" Source="/Assets/wd318111.jpg" Stretch="Fill" />
+        <Image Grid.Row="6" Grid.Column="7" Source="/Assets/wd318111.jpg" Stretch="Fill" />
+        <Image Grid.Row="8" Grid.Column="7" Source="/Assets/wd318111.jpg" Stretch="Fill" />
+        <Image Grid.Row="10" Grid.Column="7" Source="/Assets/wd318111.jpg" Stretch="Fill" />
+        <Image Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="3" Source="/Assets/wd318111.jpg" Stretch="Fill" />
+        <Image Grid.Row="10" Grid.ColumnSpan="5" Source="/Assets/wd318111.jpg" Stretch="Fill" />
+        <Button x:Name="btnTerm1" Grid.Column="0" Grid.Row="2" Height="100" Width="200" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Tapped="btnTerm1_Tapped">
+            <Image  Source="/Assets/desk-top-computer-screen-hi.png"  />
+        </Button>
+        <Button x:Name="btnTerm2" Grid.Column="2" Grid.Row="2" Height="100" Width="200" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Tapped="btnTerm1_Tapped">
+            <Image  Source="/Assets/desk-top-computer-screen-hi.png"  />
+        </Button>
+        <Button x:Name="btnTerm3" Grid.Column="4" Grid.Row="2" Height="100" Width="200" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Tapped="btnTerm1_Tapped">
+            <Image  Source="/Assets/desk-top-computer-screen-hi.png"  />
+        </Button>
+        
+        <Button x:Name="btnTerm4" Grid.Column="7" Grid.Row="1" Height="100" Width="200" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Tapped="btnTerm1_Tapped">
+            <Image  Source="/Assets/desk-top-computer-screen-hi.png"  />
+        </Button>
+        <Button x:Name="btnTerm5" Grid.Column="7" Grid.Row="3" Height="100" Width="200" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Tapped="btnTerm1_Tapped">
+            <Image  Source="/Assets/desk-top-computer-screen-hi.png"  />
+        </Button>
+        <Button x:Name="btnTerm6" Grid.Column="7" Grid.Row="5" Height="100" Width="200" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Tapped="btnTerm1_Tapped">
+            <Image  Source="/Assets/desk-top-computer-screen-hi.png"  />
+        </Button>
+        <Button x:Name="btnTerm7" Grid.Column="7" Grid.Row="7" Height="100" Width="200" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Tapped="btnTerm1_Tapped">
+            <Image  Source="/Assets/desk-top-computer-screen-hi.png"  />
+        </Button>
+        <Button x:Name="btnTerm8" Grid.Column="7" Grid.Row="9" Height="100" Width="200" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Tapped="btnTerm1_Tapped">
+            <Image  Source="/Assets/desk-top-computer-screen-hi.png"  />
+        </Button>
+        
+        <Button x:Name="btnTerm9" Grid.Column="1" Grid.Row="5" Height="100" Width="200" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Tapped="btnTerm1_Tapped">
+            <Image  Source="/Assets/desk-top-computer-screen-hi.png"  />
+        </Button>
+        <Button x:Name="btnTerm10" Grid.Column="3" Grid.Row="5" Height="100" Width="200" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Tapped="btnTerm1_Tapped">
+            <Image  Source="/Assets/desk-top-computer-screen-hi.png"  />
+        </Button>
+        <Button x:Name="btnTerm11" Grid.Column="0" Grid.Row="9" Height="100" Width="200" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Tapped="btnTerm1_Tapped">
+            <Image  Source="/Assets/desk-top-computer-screen-hi.png"  />
+        </Button>
+        <Button x:Name="btnTerm12" Grid.Column="2" Grid.Row="9" Height="100" Width="200" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Tapped="btnTerm1_Tapped">
+            <Image  Source="/Assets/desk-top-computer-screen-hi.png"  />
+        </Button>
+        <Button x:Name="btnTerm13" Grid.Column="4" Grid.Row="9" Height="100" Width="200" d:LayoutOverrides="LeftPosition, RightPosition, TopPosition, BottomPosition" Tapped="btnTerm1_Tapped">
+            <Image  Source="/Assets/desk-top-computer-screen-hi.png"  />
+        </Button>
+       
+    </Grid>
+</Page>
